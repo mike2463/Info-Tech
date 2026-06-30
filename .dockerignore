@@ -1,0 +1,20 @@
+# Keep the build context small and never bake secrets / outputs into the image.
+.git
+.gitignore
+.venv
+outputs/
+**/__pycache__/
+*.pyc
+
+# Secrets — provided at runtime via env_file, never copied into the image.
+.env
+data/.env
+
+# Local inputs are mounted at runtime, not baked in.
+data/
+
+# Dev / docs cruft
+*.docx
+~$*.docx
+README.md.bak
+scratchpad/

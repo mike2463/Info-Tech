@@ -1,0 +1,52 @@
+{
+  "Message": {
+    "Subject": "MLHG PO MLHG-PO-104772 — Please process invoice (attached PDF) for seating delivery (Phase 2)",
+    "Body": {
+      "ContentType": "Text",
+      "Content": "Hi Accounts Payable team,\n\nPlease help us process the attached vendor invoice package for our Phase 2 seating refresh. This invoice should be matched against our PO and distributed across the receiving sites listed in the document.\n\nWhat we need from you\n\nCreate/confirm the vendor invoice entry for Northbridge Office Furnishings Inc.\n\nMatch to PO: MLHG-PO-104772 (terms Net 30).\n\nEnsure taxes are applied per ship-to jurisdiction (ON vs QC) as outlined in the invoice package.\n\nRoute for approval under the following cost centres:\n\nTOR-OPS-221\n\nOTT-TRN-114\n\nMTL-ADM-038\n\nNotes / context\n\nThis is part of “Harborview Seating Refresh — Phase 2” and includes a mix of task chairs, conference chairs, stacking chairs, guest chairs, plus delivery and assembly services.\n\nDeliveries are appointment-based and split across Toronto, Ottawa, and Montréal. Receiving teams are copied so they can coordinate dock scheduling if AP needs confirmation.\n\nPotential duplicates\nWe previously received a preliminary quote (not an invoice) from the vendor in late December. This attached document is the invoice package we need processed now. Please flag if you see any duplication in the system.\n\nIf you need anything from my side (approval email, PO summary, or receiving confirmation), reply-all and I’ll jump on it.\n\nThanks,\nDana Kwan\nProcurement Operations — Maple Leaf Healthcare Group (MLHG)\ndana.kwan@mlhg.example | +1 (905) 555-0144\n4100 Aurora Parkway, Building B, Mississauga, ON L5N 7T8"
+    },
+    "From": {
+      "EmailAddress": {
+        "Name": "Dana Kwan",
+        "Address": "dana.kwan@mlhg.example"
+      }
+    },
+    "ToRecipients": [
+      {
+        "EmailAddress": {
+          "Name": "Accounts Payable",
+          "Address": "ap@yourcompany.example"
+        }
+      }
+    ],
+    "CcRecipients": [
+      {
+        "EmailAddress": {
+          "Name": "Receiving TOR Ops",
+          "Address": "receiving.torops@mlhg.example"
+        }
+      },
+      {
+        "EmailAddress": {
+          "Name": "Facilities Ottawa",
+          "Address": "facilities.ottawa@mlhg.example"
+        }
+      },
+      {
+        "EmailAddress": {
+          "Name": "Procurement Ops",
+          "Address": "purchasing@mlhg.example"
+        }
+      }
+    ],
+    "Attachments": [
+      {
+        "@odata.type": "#microsoft.graph.fileAttachment",
+        "Name": "Invoice.pdf",
+        "ContentType": "application/pdf",
+        "ContentBytes": null
+      }
+    ],
+    "SentDateTime": "2026-01-26T10:14:52-05:00"
+  }
+}

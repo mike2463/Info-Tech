@@ -1,0 +1,21 @@
+# Run the invoice-intake agent in a container.
+#
+#   docker compose run --rm agent
+#
+# Reads inputs from ./data (including ./data/.env for the OPENAI_API_KEY) and
+# writes the outbound notification to ./outputs on the host.
+services:
+  agent:
+    build: .
+    image: invoice-intake-agent
+    env_file:
+      - ./data/.env
+    environment:
+      # Allow overriding models/effort without touching .env (optional).
+      AGENT_MODEL: ${AGENT_MODEL:-gpt-5-nano}
+      EXTRACTION_MODEL: ${EXTRACTION_MODEL:-gpt-5-mini}
+      REASONING_EFFORT: ${REASONING_EFFORT:-low}
+    volumes:
+      - ./data:/app/data:ro
+      - ./outputs:/app/outputs
+    # Default command parses ./data/Email.json; override after `run --rm agent`.

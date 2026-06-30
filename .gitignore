@@ -216,3 +216,15 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# --- Project-specific ---
+# Generated agent output (notification artifacts)
+outputs/
+
+# Assignment brief / Office lock files — not part of the deliverable
+Assignment Description.docx
+~$*.docx
+*.docx
+
+# Local scratch
+scratchpad/
