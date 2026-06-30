@@ -1,0 +1,219 @@
+{
+  "notification_type": "invoice_intake",
+  "generated_at": "2026-06-30T15:03:58.068285+00:00",
+  "recipient": "Customer Service / Accounts Payable",
+  "agent_notes": "Invoice NBX-260126-0174 for Northbridge Office Furnishings Inc. matched to PO MLHG-PO-104772 (Net 30). Route for approval to cost centres TOR-OPS-221, OTT-TRN-114, MTL-ADM-038. Deliveries appointment-based across Toronto, Ottawa, and Montréal; dock coordination with receiving teams. Taxes to reflect ship-to jurisdictions ON vs QC per invoice. This is Harborview Seating Refresh — Phase 2 with chairs and delivery/assembly services. Potential duplicate: a preliminary quote from December exists; please flag any duplication in the system and advise if any prior quote should be linked/blocked.",
+  "invoice": {
+    "vendor_name": "Northbridge Office Furnishings Inc.",
+    "invoice_number": "NBX-260126-0174",
+    "invoice_date": "2026-01-26",
+    "due_date": "2026-02-25",
+    "payment_terms": "Net 30",
+    "currency": "CAD",
+    "customer_name": "Maple Leaf Healthcare Group (MLHG)",
+    "customer_account": "004913-MLHG",
+    "customer_po_number": "MLHG-PO-104772",
+    "subtotal": 113983.69,
+    "total_tax": 15166.37,
+    "total_due": 129150.06,
+    "taxes": [
+      {
+        "jurisdiction": "Ontario (Sites A + B)",
+        "tax_type": "HST 13%",
+        "taxable_amount": 96338.71,
+        "tax_amount": 12524.03
+      },
+      {
+        "jurisdiction": "Québec (Site C)",
+        "tax_type": "GST 5%",
+        "taxable_amount": 17644.98,
+        "tax_amount": 882.25
+      },
+      {
+        "jurisdiction": "Québec (Site C)",
+        "tax_type": "QST 9.975%",
+        "taxable_amount": 17644.98,
+        "tax_amount": 1760.09
+      }
+    ],
+    "line_items": [
+      {
+        "line": 1,
+        "sku": "CHR-ERG-8400-BLK",
+        "description": "ErgoFlex 8400 Task Chair — Black fabric, 4D arms, synchro-tilt, adjustable lumbar, 300 lb rating",
+        "quantity": 120.0,
+        "unit_price": 357.88,
+        "line_total": 42945.6
+      },
+      {
+        "line": 2,
+        "sku": "CHR-ERG-8400-GRY",
+        "description": "ErgoFlex 8400 Task Chair — Graphite fabric, 4D arms, synchro-tilt, adjustable lumbar, 300 lb rating",
+        "quantity": 80.0,
+        "unit_price": 357.88,
+        "line_total": 28630.4
+      },
+      {
+        "line": 3,
+        "sku": "CHR-CONF-6100-WHT",
+        "description": "SwayLine 6100 Conference Chair — White shell, sled base, armless, stackable (low profile)",
+        "quantity": 48.0,
+        "unit_price": 234.6,
+        "line_total": 11260.8
+      },
+      {
+        "line": 4,
+        "sku": "CHR-STK-2200-BLU",
+        "description": "StackPro 2200 Stacking Chair — Blue polypropylene seat, chrome frame, ganging clips included",
+        "quantity": 150.0,
+        "unit_price": 73.14,
+        "line_total": 10971.0
+      },
+      {
+        "line": 5,
+        "sku": "CHR-GUEST-3300-CHR",
+        "description": "UrbanGuest 3300 Guest Chair — Charcoal fabric, fixed arms, steel frame, non-marking feet",
+        "quantity": 40.0,
+        "unit_price": 137.08,
+        "line_total": 5483.2
+      },
+      {
+        "line": 6,
+        "sku": "CHR-STK-DOLLY-1",
+        "description": "StackPro Dolly — capacity 12 chairs per stack, locking casters (for CHR-STK-2200 series)",
+        "quantity": 3.0,
+        "unit_price": 210.0,
+        "line_total": 630.0
+      },
+      {
+        "line": 7,
+        "sku": "ACC-FLR-GLIDE-SET",
+        "description": "Soft-Floor Glide Kit (set of 5) — for ErgoFlex 8400 series (reduces floor wear on vinyl/laminate)",
+        "quantity": 200.0,
+        "unit_price": 12.0,
+        "line_total": 2400.0
+      },
+      {
+        "line": 8,
+        "sku": "SVC-ASSEMBLY",
+        "description": "On-site assembly service — non-stacking chairs only (task + conference + guest categories)",
+        "quantity": 288.0,
+        "unit_price": 18.0,
+        "line_total": 5184.0
+      },
+      {
+        "line": 9,
+        "sku": "FRG-WHITEGLOVE-ON",
+        "description": "White-glove delivery + appointment scheduling (Ontario) (Site A + Site B)",
+        "quantity": 2.0,
+        "unit_price": 850.0,
+        "line_total": 1700.0
+      },
+      {
+        "line": 10,
+        "sku": "FRG-WHITEGLOVE-QC",
+        "description": "White-glove delivery + rendez-vous (Québec) (Site C)",
+        "quantity": 1.0,
+        "unit_price": 975.0,
+        "line_total": 975.0
+      },
+      {
+        "line": 11,
+        "sku": "FRG-FUEL-SURCHG",
+        "description": "Fuel surcharge (rate per contract; applied to shipment)",
+        "quantity": 1.0,
+        "unit_price": 3475.19,
+        "line_total": 3475.19
+      },
+      {
+        "line": 12,
+        "sku": "FEE-ENV-HANDLING",
+        "description": "Environmental handling fee (recycling + pallet recovery) billed per chair unit shipped",
+        "quantity": 438.0,
+        "unit_price": 0.75,
+        "line_total": 328.5
+      }
+    ],
+    "ship_to_sites": [
+      {
+        "site": "Site A — MLHG Toronto Operations Centre",
+        "cost_centre": "TOR-OPS-221",
+        "address": "Attn: Receiving Dock / Facilities\n200 Front St W, 21st Floor (Dock access via Simcoe St)\nToronto, ON M5V 3L2 Canada",
+        "items": [
+          "CHR-ERG-8400-BLK Qty 90",
+          "CHR-ERG-8400-GRY Qty 30",
+          "CHR-CONF-6100-WHT Qty 24",
+          "CHR-GUEST-3300-CHR Qty 15",
+          "ACC-FLR-GLIDE-SET Qty 120 sets",
+          "SVC-ASSEMBLY Qty 159 chairs (on-site assembly)"
+        ],
+        "delivery_window": "2026-01-29 to 2026-02-03, 08:00–14:00",
+        "delivery_service": "White-glove (Ontario) — 1 stop (appointment required)"
+      },
+      {
+        "site": "Site B — MLHG Ottawa Training & Fulfillment",
+        "cost_centre": "OTT-TRN-114",
+        "address": "Attn: Receiving Dock / Facilities\n88 Industrial Ave\nOttawa, ON K1S 5H4 Canada",
+        "items": [
+          "CHR-ERG-8400-BLK Qty 20",
+          "CHR-ERG-8400-GRY Qty 30",
+          "CHR-CONF-6100-WHT Qty 12",
+          "CHR-GUEST-3300-CHR Qty 15",
+          "CHR-STK-2200-BLU Qty 150",
+          "CHR-STK-DOLLY-1 Qty 3",
+          "ACC-FLR-GLIDE-SET Qty 50 sets",
+          "SVC-ASSEMBLY Qty 77 chairs (on-site assembly; stacking chairs excluded)"
+        ],
+        "delivery_window": "2026-01-30 to 2026-02-04, 07:30–15:30",
+        "delivery_service": "White-glove (Ontario) — 1 stop (appointment required)"
+      },
+      {
+        "site": "Site C — MLHG Montréal Clinic Admin",
+        "cost_centre": "MTL-ADM-038",
+        "address": "Attn: Réception / Facilities\n410 Rue Saint-Jacques, Suite 900\nMontréal, QC H2Y 1S1 Canada",
+        "items": [
+          "CHR-ERG-8400-BLK Qty 10",
+          "CHR-ERG-8400-GRY Qty 20",
+          "CHR-CONF-6100-WHT Qty 12",
+          "CHR-GUEST-3300-CHR Qty 10",
+          "ACC-FLR-GLIDE-SET Qty 30 sets",
+          "SVC-ASSEMBLY Qty 52 chairs (on-site assembly)"
+        ],
+        "delivery_window": "2026-02-03 to 2026-02-07, 09:00–16:00",
+        "delivery_service": "White-glove (Québec) — 1 stop (rendez-vous requis)"
+      }
+    ],
+    "cost_centres": [
+      "TOR-OPS-221",
+      "OTT-TRN-114",
+      "MTL-ADM-038"
+    ],
+    "important_notes": [
+      "Receiving Hours: Site A Mon–Fri 08:00–14:00 (appointment required); Site B Mon–Thu 07:30–15:30 (appointment required); Site C Lun–Ven 09:00–16:00 (rendez-vous requis).",
+      "White-glove delivery with appointment scheduling per site.",
+      "All chairs shipped KD where applicable; stacking chairs ship factory-assembled (no on-site assembly billed).",
+      "Assembly billed only for non-stacking chair categories; SVC-ASSEMBLY scope excludes stacking chairs.",
+      "Please retain all packaging until inventory verification is complete. Report any freight damage within 48 hours to cs@northbridgefurnishings.example.",
+      "Special handling: Keep dry; do not stack more than 2 pallets high; avoid fork puncture.",
+      "Receiving checklist: count pallets and photograph pallet labels, verify carton counts against Site Allocation, open 1 carton per product type to confirm finish/color, record damage on delivery receipt and email photos within 48 hours."
+    ],
+    "extraction_warnings": []
+  },
+  "source_email": {
+    "subject": "MLHG PO MLHG-PO-104772 — Please process invoice (attached PDF) for seating delivery (Phase 2)",
+    "from": "Dana Kwan <dana.kwan@mlhg.example>",
+    "to": [
+      "Accounts Payable <ap@yourcompany.example>"
+    ],
+    "cc": [
+      "Receiving TOR Ops <receiving.torops@mlhg.example>",
+      "Facilities Ottawa <facilities.ottawa@mlhg.example>",
+      "Procurement Ops <purchasing@mlhg.example>"
+    ],
+    "sent": "2026-01-26T10:14:52-05:00",
+    "attachments": [
+      "Invoice.pdf"
+    ],
+    "body": "Hi Accounts Payable team,\n\nPlease help us process the attached vendor invoice package for our Phase 2 seating refresh. This invoice should be matched against our PO and distributed across the receiving sites listed in the document.\n\nWhat we need from you\n\nCreate/confirm the vendor invoice entry for Northbridge Office Furnishings Inc.\n\nMatch to PO: MLHG-PO-104772 (terms Net 30).\n\nEnsure taxes are applied per ship-to jurisdiction (ON vs QC) as outlined in the invoice package.\n\nRoute for approval under the following cost centres:\n\nTOR-OPS-221\n\nOTT-TRN-114\n\nMTL-ADM-038\n\nNotes / context\n\nThis is part of “Harborview Seating Refresh — Phase 2” and includes a mix of task chairs, conference chairs, stacking chairs, guest chairs, plus delivery and assembly services.\n\nDeliveries are appointment-based and split across Toronto, Ottawa, and Montréal. Receiving teams are copied so they can coordinate dock scheduling if AP needs confirmation.\n\nPotential duplicates\nWe previously received a preliminary quote (not an invoice) from the vendor in late December. This attached document is the invoice package we need processed now. Please flag if you see any duplication in the system.\n\nIf you need anything from my side (approval email, PO summary, or receiving confirmation), reply-all and I’ll jump on it.\n\nThanks,\nDana Kwan\nProcurement Operations — Maple Leaf Healthcare Group (MLHG)\ndana.kwan@mlhg.example | +1 (905) 555-0144\n4100 Aurora Parkway, Building B, Mississauga, ON L5N 7T8"
+  }
+}

@@ -1,0 +1,117 @@
+ACTION REQUIRED: Vendor invoice ready for processing
+========================================================
+
+To: Customer Service / Accounts Payable
+Re: Invoice NBX-260126-0174 from Northbridge Office Furnishings Inc.
+
+INVOICE SUMMARY
+--------------------------------------------------------
+  Vendor:            Northbridge Office Furnishings Inc.
+  Invoice number:    NBX-260126-0174
+  Invoice date:      2026-01-26
+  Due date:          2026-02-25
+  Payment terms:     Net 30
+  Currency:          CAD
+  Customer account:  004913-MLHG
+  Customer PO:       MLHG-PO-104772
+  Subtotal:          113,983.69 CAD
+  Total tax:         15,166.37 CAD
+  TOTAL DUE:         129,150.06 CAD
+
+TAX BREAKDOWN
+--------------------------------------------------------
+  Ontario (Sites A + B) | HST 13% | taxable 96,338.71 CAD | tax 12,524.03 CAD
+  Québec (Site C) | GST 5% | taxable 17,644.98 CAD | tax 882.25 CAD
+  Québec (Site C) | QST 9.975% | taxable 17,644.98 CAD | tax 1,760.09 CAD
+
+LINE ITEMS (12)
+--------------------------------------------------------
+   1. CHR-ERG-8400-BLK | ErgoFlex 8400 Task Chair — Black fabric, 4D arms, synchro-tilt, adjustable lumbar, 300 lb rating
+      qty 120 x 357.88 CAD = 42,945.60 CAD
+   2. CHR-ERG-8400-GRY | ErgoFlex 8400 Task Chair — Graphite fabric, 4D arms, synchro-tilt, adjustable lumbar, 300 lb rating
+      qty 80 x 357.88 CAD = 28,630.40 CAD
+   3. CHR-CONF-6100-WHT | SwayLine 6100 Conference Chair — White shell, sled base, armless, stackable (low profile)
+      qty 48 x 234.60 CAD = 11,260.80 CAD
+   4. CHR-STK-2200-BLU | StackPro 2200 Stacking Chair — Blue polypropylene seat, chrome frame, ganging clips included
+      qty 150 x 73.14 CAD = 10,971.00 CAD
+   5. CHR-GUEST-3300-CHR | UrbanGuest 3300 Guest Chair — Charcoal fabric, fixed arms, steel frame, non-marking feet
+      qty 40 x 137.08 CAD = 5,483.20 CAD
+   6. CHR-STK-DOLLY-1 | StackPro Dolly — capacity 12 chairs per stack, locking casters (for CHR-STK-2200 series)
+      qty 3 x 210.00 CAD = 630.00 CAD
+   7. ACC-FLR-GLIDE-SET | Soft-Floor Glide Kit (set of 5) — for ErgoFlex 8400 series (reduces floor wear on vinyl/laminate)
+      qty 200 x 12.00 CAD = 2,400.00 CAD
+   8. SVC-ASSEMBLY | On-site assembly service — non-stacking chairs only (task + conference + guest categories)
+      qty 288 x 18.00 CAD = 5,184.00 CAD
+   9. FRG-WHITEGLOVE-ON | White-glove delivery + appointment scheduling (Ontario) (Site A + Site B)
+      qty 2 x 850.00 CAD = 1,700.00 CAD
+  10. FRG-WHITEGLOVE-QC | White-glove delivery + rendez-vous (Québec) (Site C)
+      qty 1 x 975.00 CAD = 975.00 CAD
+  11. FRG-FUEL-SURCHG | Fuel surcharge (rate per contract; applied to shipment)
+      qty 1 x 3,475.19 CAD = 3,475.19 CAD
+  12. FEE-ENV-HANDLING | Environmental handling fee (recycling + pallet recovery) billed per chair unit shipped
+      qty 438 x 0.75 CAD = 328.50 CAD
+
+SHIP-TO / SITE ALLOCATIONS
+--------------------------------------------------------
+  Site A — MLHG Toronto Operations Centre (TOR-OPS-221)
+      Attn: Receiving Dock / Facilities
+200 Front St W, 21st Floor (Dock access via Simcoe St)
+Toronto, ON M5V 3L2 Canada
+      - CHR-ERG-8400-BLK Qty 90
+      - CHR-ERG-8400-GRY Qty 30
+      - CHR-CONF-6100-WHT Qty 24
+      - CHR-GUEST-3300-CHR Qty 15
+      - ACC-FLR-GLIDE-SET Qty 120 sets
+      - SVC-ASSEMBLY Qty 159 chairs (on-site assembly)
+      Delivery window: 2026-01-29 to 2026-02-03, 08:00–14:00
+      Delivery service: White-glove (Ontario) — 1 stop (appointment required)
+  Site B — MLHG Ottawa Training & Fulfillment (OTT-TRN-114)
+      Attn: Receiving Dock / Facilities
+88 Industrial Ave
+Ottawa, ON K1S 5H4 Canada
+      - CHR-ERG-8400-BLK Qty 20
+      - CHR-ERG-8400-GRY Qty 30
+      - CHR-CONF-6100-WHT Qty 12
+      - CHR-GUEST-3300-CHR Qty 15
+      - CHR-STK-2200-BLU Qty 150
+      - CHR-STK-DOLLY-1 Qty 3
+      - ACC-FLR-GLIDE-SET Qty 50 sets
+      - SVC-ASSEMBLY Qty 77 chairs (on-site assembly; stacking chairs excluded)
+      Delivery window: 2026-01-30 to 2026-02-04, 07:30–15:30
+      Delivery service: White-glove (Ontario) — 1 stop (appointment required)
+  Site C — MLHG Montréal Clinic Admin (MTL-ADM-038)
+      Attn: Réception / Facilities
+410 Rue Saint-Jacques, Suite 900
+Montréal, QC H2Y 1S1 Canada
+      - CHR-ERG-8400-BLK Qty 10
+      - CHR-ERG-8400-GRY Qty 20
+      - CHR-CONF-6100-WHT Qty 12
+      - CHR-GUEST-3300-CHR Qty 10
+      - ACC-FLR-GLIDE-SET Qty 30 sets
+      - SVC-ASSEMBLY Qty 52 chairs (on-site assembly)
+      Delivery window: 2026-02-03 to 2026-02-07, 09:00–16:00
+      Delivery service: White-glove (Québec) — 1 stop (rendez-vous requis)
+
+COST CENTRES FOR APPROVAL ROUTING
+--------------------------------------------------------
+  TOR-OPS-221, OTT-TRN-114, MTL-ADM-038
+
+IMPORTANT NOTES
+--------------------------------------------------------
+  - Receiving Hours: Site A Mon–Fri 08:00–14:00 (appointment required); Site B Mon–Thu 07:30–15:30 (appointment required); Site C Lun–Ven 09:00–16:00 (rendez-vous requis).
+  - White-glove delivery with appointment scheduling per site.
+  - All chairs shipped KD where applicable; stacking chairs ship factory-assembled (no on-site assembly billed).
+  - Assembly billed only for non-stacking chair categories; SVC-ASSEMBLY scope excludes stacking chairs.
+  - Please retain all packaging until inventory verification is complete. Report any freight damage within 48 hours to cs@northbridgefurnishings.example.
+  - Special handling: Keep dry; do not stack more than 2 pallets high; avoid fork puncture.
+  - Receiving checklist: count pallets and photograph pallet labels, verify carton counts against Site Allocation, open 1 carton per product type to confirm finish/color, record damage on delivery receipt and email photos within 48 hours.
+
+SOURCE EMAIL
+--------------------------------------------------------
+  From:    Dana Kwan <dana.kwan@mlhg.example>
+  Subject: MLHG PO MLHG-PO-104772 — Please process invoice (attached PDF) for seating delivery (Phase 2)
+  Sent:    2026-01-26T10:14:52-05:00
+
+AGENT NOTES
+--------------------------------------------------------
+  Invoice NBX-260126-0174 for Northbridge Office Furnishings Inc. matched to PO MLHG-PO-104772 (Net 30). Route for approval to cost centres TOR-OPS-221, OTT-TRN-114, MTL-ADM-038. Deliveries appointment-based across Toronto, Ottawa, and Montréal; dock coordination with receiving teams. Taxes to reflect ship-to jurisdictions ON vs QC per invoice. This is Harborview Seating Refresh — Phase 2 with chairs and delivery/assembly services. Potential duplicate: a preliminary quote from December exists; please flag any duplication in the system and advise if any prior quote should be linked/blocked.
