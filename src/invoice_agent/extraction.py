@@ -15,7 +15,40 @@ from __future__ import annotations
 from openai import OpenAI
 
 from .pdf_extract import PdfContent
-from .schema import InvoiceData
+from .schema import CRITICAL_FIELDS, InvoiceData
+
+
+class ExtractionQualityError(RuntimeError):
+    """The model returned parseable JSON, but the load-bearing fields a genuine
+    read must produce (e.g. the image-only invoice number) are missing.
+
+    Raised so that a degraded or failed vision read surfaces as a real failure
+    (non-zero exit, no "success" notification) instead of a clean-looking
+    notification full of blanks. This is the guard that prevents "appears to
+    work when it does not".
+    """
+
+    def __init__(self, missing: list[str]) -> None:
+        self.missing = missing
+        super().__init__(
+            "Extraction returned no value for required field(s): "
+            f"{', '.join(missing)}. "
+            "The invoice number exists only inside the page-1 image, so an "
+            "empty value means the vision read did not work. Refusing to "
+            "report success."
+        )
+
+
+def validate_quality(data: InvoiceData) -> None:
+    """Raise :class:`ExtractionQualityError` if critical fields are missing.
+
+    Detects an *empty* extraction (the vision read produced nothing usable). It
+    cannot detect a *wrong-but-non-empty* value (a hallucinated number) — that
+    would require ground truth we do not have; see README for this limitation.
+    """
+    missing = data.missing_critical_fields()
+    if missing:
+        raise ExtractionQualityError(missing)
 
 _SYSTEM_PROMPT = (
     "You are a precise invoice data-extraction engine. "
@@ -100,10 +133,17 @@ def extract_invoice(
     if warnings:
         data.extraction_warnings = [*warnings, *data.extraction_warnings]
 
-    # Lightweight validation: flag the most important image-only field if missing.
-    if not data.invoice_number:
+    # Hard quality gate: if the load-bearing fields are empty the vision read
+    # did not work — fail loudly instead of emitting a blank "success".
+    validate_quality(data)
+
+    # Non-fatal: surface any *other* image-header fields that came back empty,
+    # so a partial read is visible without failing the whole run.
+    partial = [f for f in data.missing_header_fields() if f not in CRITICAL_FIELDS]
+    if partial:
         data.extraction_warnings.append(
-            "invoice_number is empty after extraction; verify the header image."
+            "Image-header field(s) empty after extraction: "
+            f"{', '.join(partial)}; verify the page-1 image."
         )
 
     return data

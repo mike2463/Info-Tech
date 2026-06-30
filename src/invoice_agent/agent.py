@@ -16,7 +16,7 @@ from agents import Agent, ModelSettings, RunContextWrapper, Runner, function_too
 
 from .config import Settings
 from .email_loader import InboundEmail
-from .extraction import extract_invoice
+from .extraction import ExtractionQualityError, extract_invoice
 from .notify import NotificationResult, build_notification
 from .pdf_extract import extract_pdf
 from .schema import InvoiceData
@@ -54,6 +54,12 @@ def extract_invoice_data(wrapper: RunContextWrapper[InvoiceRunContext]) -> str:
             model=ctx.settings.extraction_model,
             reasoning_effort=ctx.settings.reasoning_effort,
         )
+    except ExtractionQualityError as exc:
+        # The vision read produced no usable invoice fields. Record it as a
+        # failure (not a warning) and do NOT set ctx.invoice, so no "success"
+        # notification can be produced and the run exits non-zero.
+        ctx.errors.append(f"extraction quality check failed: {exc}")
+        return f"ERROR: extraction did not produce the required fields: {exc}"
     except Exception as exc:  # surface API/parse errors to the agent cleanly
         ctx.errors.append(f"extraction failed: {exc}")
         return f"ERROR extracting invoice fields: {exc}"

@@ -139,9 +139,32 @@ Override models/effort via env vars (`AGENT_MODEL`, `EXTRACTION_MODEL`,
 
 - Missing/invalid email JSON, missing PDF attachment, and unreadable/empty PDFs
   produce clear messages and a non-zero exit code.
-- If the PDF has no embedded image, extraction degrades to text-only and records
-  a warning (image-only fields may be blank) instead of crashing.
-- API/SDK errors are surfaced rather than silently retried.
+- API/SDK errors and unparseable model output are surfaced (and raise) rather
+  than silently retried or swallowed.
+
+### Data-quality gate (no "fake success")
+
+The program must never *appear* to work when the extraction did not. A degraded
+vision read can return structurally-valid JSON with the load-bearing fields
+empty — so success is gated on **data quality, not just "a file was written."**
+
+- After extraction, [`validate_quality`](src/invoice_agent/extraction.py) raises
+  `ExtractionQualityError` if the critical fields are empty. The decisive one is
+  **`invoice_number`**: it exists *only* inside the page-1 image (not in the PDF
+  text, not in the email), so an empty value proves the vision read failed.
+- A failed gate records an error, writes **no** "success" notification, and the
+  CLI exits **non-zero**. Any recorded error forces a non-zero exit even if a
+  file was written for inspection.
+- If the PDF has no embedded image at all, extraction runs text-only, emits a
+  warning, and then fails this gate (the image-only invoice number cannot be
+  recovered) — an honest failure rather than a blank "success."
+- The gate is verified offline (no API) in
+  [`tests/test_quality_gate.py`](tests/test_quality_gate.py).
+
+**Known limitation (stated honestly):** this gate detects an *empty* extraction,
+not a *wrong-but-non-empty* one. A model that hallucinated a plausible invoice
+number would pass the gate; catching that would require ground truth the system
+does not have.
 
 ---
 

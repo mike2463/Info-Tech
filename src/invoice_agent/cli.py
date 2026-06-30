@@ -116,7 +116,7 @@ def main(argv: list[str] | None = None) -> int:
 
     # 4. Report.
     if ctx.errors:
-        print("\nThe agent reported issues:", file=sys.stderr)
+        print("\nThe run reported issues:", file=sys.stderr)
         for e in ctx.errors:
             print(f"  - {e}", file=sys.stderr)
 
@@ -134,6 +134,16 @@ def main(argv: list[str] | None = None) -> int:
     print("=" * 56)
     print(f"Wrote: {ctx.notification.text_path}")
     print(f"Wrote: {ctx.notification.json_path}")
+
+    # The exit code is a hard quality gate: any recorded error makes this a
+    # non-zero exit even if a notification file was written for inspection, so a
+    # degraded run can never present as a clean success.
+    if ctx.errors:
+        print(
+            "\n[failure] Completed with errors (see above); exit code is non-zero.",
+            file=sys.stderr,
+        )
+        return 1
     return 0
 
 
