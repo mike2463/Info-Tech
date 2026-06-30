@@ -15,6 +15,10 @@ The agent uses exactly two tools:
 2. **`send_to_customer_service`** — renders the outbound summary + JSON payload
    and writes them to disk (behaves like a "send notification" tool).
 
+> 📖 **Deep dive:** [ARCHITECTURE.md](ARCHITECTURE.md) explains exactly how every
+> module, the agent/tool design, the extraction call, the anti-masking quality
+> gate, error handling, and the Docker setup work.
+
 ---
 
 ## How it works
